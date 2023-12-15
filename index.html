@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Raleway:ital,wght@1,300&family=Ysabeau+Infant:wght@200;300;500&display=swap');
+    
+      
+      .container {
+        background-color: rgb(19, 144, 194);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 30px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        border-bottom: 10px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+   .box{
+   margin-top: 14px;
+   color: rgb(231, 231, 232);
+   font-family: 'Lobster', sans-serif;
+
+   font-size: larger;
+   }
+      .baby {
+        height: 50px;
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+      input {
+        margin-right: 20px;
+        border-radius: 10px;
+        height: 30px;
+        border: 2px solid black;
+      }
+      a {
+        margin-left: 20px;
+        margin-right: 10px;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(152, 255, 27);
+        font-weight: 700;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      a:hover {
+        color: yellow;
+      }
+
+      #hero {
+        display: flex;
+        justify-content: space-around;
+        border-radius: 30px;
+      }
+      .right {
+        border-radius: 200px;
+        width: 500px;
+        height: 500px;
+      }
+      .right img {
+        border-radius: 100px;
+        margin-top: 250px;
+        margin-left: 200px;
+      }
+      .right img:hover {
+        width: 300px;
+        height: 300px;
+        transition-duration: 5s;
+      }
+      @keyframes biodata {
+        from {
+          font-size: 20px;
+          text-shadow: 20px 20px 40px rgb(15, 245, 15);
+        }
+        to {
+          transform: translate(70px);
+          font-size: 70px;
+          text-shadow: 20px 20px 40px rgb(82, 1, 1);
+        }
+      }
+
+      #text {
+        position: relative;
+        z-index: -2;
+        margin-top: 100px;
+        margin-left: 50px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(85, 153, 2);
+        font-weight: bold;
+        text-shadow: 20px 20px 40px rgb(15, 245, 15);
+        animation-name: biodata;
+        transform: scale(100px);
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+      }
+      #text:hover {
+        cursor: pointer;
+      }
+
+      #about {
+        margin: auto;
+        margin-top: 80px;
+        text-align: center;
+        border: 10px double black;
+        width: 450px;
+        height: 300px;
+        color: rgb(85, 153, 2);
+        border-radius: 10px;
+      }
+      #about p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(10, 192, 248);
+      }
+      #contact {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border: 10px double black;
+        width: 450px;
+        height: 400px;
+        color: rgb(79, 140, 4);
+      }
+      #contact button {
+        height: 40px;
+        width: 100px;
+        border-radius: 10px;
+        background-color: rgb(6, 97, 133);
+        color: white;
+        font-weight: bold;
+        border: none;
+        margin-top: 10px;
+      }
+     ::placeholder {
+        color:rgb(55, 100, 0)
+      }
+
+      .test {
+        margin-top: 10px;
+        border: 2px solid black;
+      }
+      #contact input {
+        width: 239px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+      }
+      .mess {
+        margin: auto;
+      }
+
+      .dark-mode {
+        background-color: black;
+        color: rgb(0, 125, 153);
+        .container {
+          background-color: rgb(49, 49, 48);
+          
+        };
+        a{
+          color: rgb(152, 3, 120);
+        };
+      
+        .about{
+          border: 10px double rgb(7, 107, 140);
+          font-weight: 900;
+
+        }
+        .contact{
+          border: 10px double rgb(7, 107, 140);
+        }
+        a:hover{
+          color:rgb(85, 153, 2);
+        }
+
+        #text{
+          color:rgb(152, 3, 120);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        Vivek Anand
+      </div>
+      <div class="baby">
+        <nav>
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="http://127.0.0.1:5500/Mydashboard.html">Dashboard</a>
+          <a href="">Portfolio</a>
+          <a href="#contact">Contact</a>
+          <a href="http://127.0.0.1:5500/loginpage.html">Login</a>
+          <input type="text" placeholder="Search" />
+        </nav>
+      </div>
+      <div
+        onclick="myFunction()"
+        style="
+          cursor: pointer;
+          font-size: 16px;
+          margin-top: 1%;
+          font-weight: 900;
+          color: rgb(152, 255, 27);
+        "
+      >
+        <i class="fa-regular fa-moon"></i> Switch Mode
+      </div>
+    </div>
+    <div id="hero">
+      <div class="left">
+        <ul id="text">
+          <li>Vivek Anand</li>
+          <br />
+          <li>Website Designer</li>
+        </ul>
+      </div>
+      <div class="right">
+        <img
+          src="cover.jpeg"
+          alt=""
+          height="100"
+          width="100px
+            "
+        />
+      </div>
+    </div>
+    <div id="about">
+      <h1>About</h1>
+      <p>
+        I am Vivek Anand, Design enthusiast learning Web development. Go to
+        Dashboard section to see my projects,
+      </p>
+      <p>Thank You.</p>
+    </div>
+    <div id="contact">
+      <h1>Contact</h1>
+      <div class="name">
+        <input type="text" placeholder="Name" />
+      </div>
+      <div class="email">
+        <input type="text" placeholder="Email" />
+      </div>
+      <div class="mess">
+        <textarea
+        
+          placeholder="Message"
+          rows="10" cols="30"
+          class="test"
+        >
+          
+
+        </textarea>
+      </div>
+      <button>Send</button>
+    </div>
+
+    
+  
+
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>
